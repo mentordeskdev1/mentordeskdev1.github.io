@@ -2,8 +2,9 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
-export default defineConfig(() => ({
+export default defineConfig(({ command }) => ({
   root: resolve(__dirname, "client"),
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
