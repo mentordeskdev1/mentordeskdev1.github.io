@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import { resolve } from "path";
 
-export default defineConfig(({ command }) => ({
+export default defineConfig(() => ({
   root: resolve(__dirname, "client"),
   base: '/',
   plugins: [react()],
