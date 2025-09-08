@@ -97,9 +97,9 @@ export default function DomainsSection() {
       category: "personal-growth",
       courseType: "subscription",
       duration: "30 mins per session",
-      validity: "1 Month",
+      validity: "Personalized",
       sessions: "Daily (Mon-Wed-Fri)",
-      sessionType: "1-to-1",
+      sessionType: "1-to-1 / Group",
       features: [
         "✅ Personalized career planning",
         "✅ Progress tracking and regular feedback",
@@ -224,7 +224,7 @@ export default function DomainsSection() {
         <div className="text-center mb-8 sm:mb-10 lg:mb-12">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-gray-900 mb-6 sm:mb-8 leading-tight">
             Find the Perfect{" "}
-            <span className="text-gradient-primary">Mentorship Program</span>{" "}
+            <span className="text-gradient-primary">Mentorship Plans</span>{" "}
             for Your Goals
           </h2>
           {/* <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 max-w-4xl mx-auto mb-4 sm:mb-6 leading-relaxed px-4">

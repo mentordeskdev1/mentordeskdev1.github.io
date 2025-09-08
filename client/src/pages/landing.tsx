@@ -4,6 +4,7 @@ import PromotionBanner from "@/components/promotion-banner";
 import BookingWidget from "@/components/booking-widget";
 import DomainsSection from "@/components/domains-section";
 import PricingSection from "@/components/pricing-section";
+import PlanSection from "@/components/plan-section";
 import WorkflowSection from "@/components/workflow-section";
 import TestimonialsSection from "@/components/testimonials-section";
 import ExpertsSection from "@/components/experts-section";
@@ -19,7 +20,8 @@ export default function Landing() {
       <HeroSection />
       <PromotionBanner />
       {/* <BookingWidget /> */}
-      <DomainsSection />
+      {/* <DomainsSection /> */}
+      <PlanSection />
       {/* <PricingSection /> */}
       {/* <LeaderboardSection /> */}
       {/* <TestimonialsSection /> */}
