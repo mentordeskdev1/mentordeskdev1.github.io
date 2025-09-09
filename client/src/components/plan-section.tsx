@@ -92,15 +92,15 @@ export default function PlanSection() {
     {
       id: "starter",
       name: "Starter",
-      subtitle: "Clarity Call",
+      subtitle: " Instant Clarity Call",
       duration: "30 Minutes",
       validity: "Same Day",
-      type: "1-on-1 Session",
+      type: "1-on-1 Connect",
       sessions: 1,
       dcSessions: 1,
       mocks: 0,
       overallMocks: 0,
-      bestFor: "Professionals needing immediate clarity on specific career challenges and quick solutions",
+      bestFor: "Urgent career doubts needing fast solutions within a day",
       icon: Target,
       // Features available in this plan
       availableFeatures: [
@@ -119,13 +119,13 @@ export default function PlanSection() {
       subtitle: "Growth Sprint",
       duration: "2 Weeks (Extendable)",
       validity: "1 Month",
-      type: "1-on-1 Session",
-      sessions: 8,
+      type: "1-on-1 Connect",
+      sessions: 12,
       dcSessions: 12,
       mocks: 2,
       overallMocks: 1,
       bestFor:
-        "Professionals seeking deep analysis of their exact problems with tracking, soft skills development, resume building, and job referrals",
+        "Specific career challenges resolved with focused short-term guidance",
       icon: Zap,
       // Features available in this plan
       availableFeatures: [
@@ -159,13 +159,13 @@ export default function PlanSection() {
       subtitle: "Career Mastery",
       duration: "1 Month (Growth-Based Extension)",
       validity: "3 Months",
-      type: "1-on-1 and Group Session",
-      sessions: 16,
+      type: "1-on-1 and Group Connect",
+      sessions: 24,
       dcSessions: 24,
       mocks: 4,
       overallMocks: 2,
       bestFor:
-        "All Pro plan features + Self-development focus, leadership skills, and long-term growth with extension possibilities based on progress",
+        "Long-term career transformation through guided improvement with personal-development",
       icon: Crown,
       // Features available in this plan (all features)
       availableFeatures: [
@@ -305,15 +305,15 @@ export default function PlanSection() {
                       {plan.sessions}
                     </div>
                     <div className="text-lg font-bold mb-3 text-blue-600">
-                      Mentoring Sessions
+                       Sessions
                     </div>
 
-                    <div className="text-4xl font-black  mb-2 text-green-800">
+                    {/* <div className="text-4xl font-black  mb-2 text-green-800">
                       {plan.dcSessions}
                     </div>
                     <div className="text-lg font-bold mb-3 text-green-600">
                       Assistance Sessions
-                    </div>
+                    </div> */}
 
                     {/* <div className="text-4xl font-black mb-2 text-purple-800">
                       {plan.mocks} + {plan.overallMocks}
