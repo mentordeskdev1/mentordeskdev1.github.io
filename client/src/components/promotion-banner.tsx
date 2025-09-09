@@ -16,7 +16,7 @@ export default function PromotionBanner() {
     {
       id: "instant30",
       code: "INSTANT30",
-      title: "30% Off Instant Mentorship",
+      title: "30% Off Starter Mentorship",
       description: "Get 30% off on your instant mentorship session",
       discountType: "percentage",
       discountValue: "30",
@@ -26,7 +26,7 @@ export default function PromotionBanner() {
     {
       id: "daily50",
       code: "DAILY50",
-      title: "50% Off Daily Mentorship",
+      title: "50% Off Pro/Elite Mentorship",
       description:
         "Get 50% off on all regular mentorship courses, perfect for long-term career guidance and skill development",
       discountType: "percentage",

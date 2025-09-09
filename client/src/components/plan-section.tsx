@@ -16,83 +16,50 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function PlanSection() {
   // Comprehensive feature list for all plans
+  // Comprehensive feature list for all plans
   const allFeatures = [
+    // 🌟 Instant Clarity Call (Day Plan)
+    { id: "quick_match", text: "Quick mentor matching" },
+    { id: "query_analysis", text: "Detailed query analysis" },
+    { id: "actionable_advice", text: "Actionable advice & feedback" },
+
+    // 🌟 Growth Sprint (Pro Plan)
     {
-      id: "mentoring",
-      text: "Expert Mentoring Sessions for immediate clarity",
+      id: "challenge_analysis",
+      text: "In-depth analysis of specific challenge",
     },
-    {
-      id: "doubt_clearance",
-      text: "Real-time Doubt Clearance and guidance",
-    },
-    { id: "roadmap", text: "Personalized Career Roadmap Planning" },
-    { id: "domain_mocks", text: "Technical Mock Interviews" },
-    { id: "final_mock", text: "Comprehensive Final Assessment" },
-    {
-      id: "feedback_score",
-      text: "Instant Performance Feedback & Scoring",
-    },
-    { id: "communication", text: "Advanced Communication & Soft Skills" },
-    { id: "resume_linkedin", text: "Complete Resume & LinkedIn Profile Makeover" },
-    { id: "salary_negotiation", text: "Strategic Salary Negotiation Training" },
-    { id: "work_life_balance", text: "Work-Life Balance & Productivity Tips" },
-    {
-      id: "milestone_feedback",
-      text: "Progress Tracking with Milestone Reviews",
-    },
-    { id: "personal_branding", text: "Personal Brand Development Strategy" },
-    {
-      id: "priority_support",
-      text: "24/7 Priority Mentor Support",
-    },
-    { id: "certification", text: "Industry-Recognized Completion Certificate" },
-    {
-      id: "leaderboard",
-      text: "Performance Leaderboard & Competition",
-    },
-    {
-      id: "dream_role_roadmap",
-      text: "Dream Role Achievement Roadmap",
-    },
-    {
-      id: "comprehensive_feedback",
-      text: "Deep Analysis & Continuous Improvement Feedback",
-    },
-    {
-      id: "expert_certification",
-      text: "Expert-Endorsed Professional Certification",
-    },
-    {
-      id: "leaderboard_recognition",
-      text: "Top Performer Recognition & Job Referrals",
-    },
-    {
-      id: "job_referrals",
-      text: "Direct Job Referrals & Opportunity Access",
-    },
+    { id: "clear_roadmap", text: "Clear roadmap to solve the challenge" },
     {
       id: "progress_tracking",
-      text: "Detailed Progress Tracking & Analytics",
+      text: "Progress tracking with guided check-ins",
+    },
+    { id: "progress", text: "Progress-based extension" },
+    { id: "assurance", text: "Assurance of challenge resolution" },
+
+    // 🌟 Career Mastery (Elite Plan)
+    {
+      id: "career_analysis",
+      text: "In-depth analysis across all career challenges",
     },
     {
-      id: "extension_option",
-      text: "Growth-Based Program Extension Options",
+      id: "long_term_roadmap",
+      text: "Structured roadmap for long-term growth",
     },
-    {
-      id: "group_sessions",
-      text: "Collaborative Group Development Sessions",
-    },
-    {
-      id: "leadership_training",
-      text: "Leadership & Management Skills Training",
-    },
+    { id: "continuous_tracking", text: "Continuous progress tracking" },
+    { id: "personal_development", text: "Personal development" },
+    { id: "productivity", text: "10x productivity guidance" },
+    { id: "communication", text: "Communication skills training" },
+    { id: "preparation", text: "Pre-placement preparation" },
+    { id: "mock_interviews", text: "Mock interviews" },
+    { id: "assessments", text: "Assessments" },
+    { id: "extension", text: "Growth-based extension" },
   ];
 
   const plans = [
     {
       id: "starter",
       name: "Starter",
-      subtitle: " Instant Clarity Call",
+      subtitle: "Instant Clarity Call",
       duration: "30 Minutes",
       validity: "Same Day",
       type: "1-on-1 Connect",
@@ -100,13 +67,10 @@ export default function PlanSection() {
       dcSessions: 1,
       mocks: 0,
       overallMocks: 0,
-      bestFor: "Urgent career doubts needing fast solutions within a day",
+      bestFor: "Urgent career doubts resolved with fast solutions in a day",
       icon: Target,
       // Features available in this plan
-      availableFeatures: [
-        "mentoring",
-        "feedback_score",
-      ],
+      availableFeatures: ["quick_match", "query_analysis", "actionable_advice"],
       color: "green",
       gradient: "from-green-50 to-emerald-100",
       border: "border-green-300",
@@ -129,29 +93,18 @@ export default function PlanSection() {
       icon: Zap,
       // Features available in this plan
       availableFeatures: [
-        "mentoring",
-        "doubt_clearance",
-        "roadmap",
-        "domain_mocks",
-        "final_mock",
-        "feedback_score",
-        "communication",
-        "resume_linkedin",
-        "salary_negotiation",
-        "milestone_feedback",
-        "personal_branding",
-        "priority_support",
-        "certification",
-        "comprehensive_feedback",
+        "challenge_analysis",
+        "clear_roadmap",
         "progress_tracking",
-        "job_referrals",
+        "assurance",
+        "progress",
       ],
       color: "blue",
       gradient: "from-blue-50 to-indigo-100",
       border: "border-blue-300",
       text: "text-blue-800",
       bg: "bg-blue-100",
-      isPopular: true,
+      isPremium: true,
     },
     {
       id: "elite",
@@ -165,47 +118,33 @@ export default function PlanSection() {
       mocks: 4,
       overallMocks: 2,
       bestFor:
-        "Long-term career transformation through guided improvement with personal-development",
+        "Long-term career transformation through guided improvement and self-development",
       icon: Crown,
-      // Features available in this plan (all features)
+      // Features available in this plan
       availableFeatures: [
-        "mentoring",
-        "doubt_clearance",
-        "roadmap",
-        "domain_mocks",
-        "final_mock",
-        "feedback_score",
+        "career_analysis",
+        "long_term_roadmap",
+        "continuous_tracking",
+        "personal_development",
+        "productivity",
         "communication",
-        "resume_linkedin",
-        "salary_negotiation",
-        "work_life_balance",
-        "milestone_feedback",
-        "personal_branding",
-        "priority_support",
-        "certification",
-        "leaderboard",
-        "dream_role_roadmap",
-        "comprehensive_feedback",
-        "expert_certification",
-        "leaderboard_recognition",
-        "job_referrals",
-        "progress_tracking",
-        "extension_option",
-        "group_sessions",
-        "leadership_training",
+        "preparation",
+        "mock_interviews",
+        "assessments",
+        "extension",
       ],
       color: "purple",
       gradient: "from-purple-50 to-violet-100",
       border: "border-purple-300",
       text: "text-purple-800",
       bg: "bg-purple-100",
-      isPremium: true,
+      isPopular: true,
     },
   ];
 
   return (
     <section
-      id="pricing"
+      id="plan"
       className="py-16 sm:py-24 bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 relative overflow-hidden"
     >
       {/* Background Effects */}
@@ -217,9 +156,8 @@ export default function PlanSection() {
         {/* Header */}
         <div className="text-center mb-16 sm:mb-20">
           <div className="inline-flex items-center bg-gradient-to-r from-orange-100 via-red-100 to-pink-100 rounded-full px-6 py-3 mb-6 animate-pulse shadow-lg">
-            <Star className="w-4 h-4 text-orange-600 mr-2" />
             <span className="text-orange-600 text-sm font-bold tracking-wide">
-              🔥 UPDATED PLAN STRUCTURE
+              🔥 Exclusive Limited-Time Offers for New Members
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-gray-900 mb-6 tracking-tight">
@@ -244,17 +182,17 @@ export default function PlanSection() {
                 key={plan.id}
                 className={`relative rounded-3xl p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl group backdrop-blur-sm ${
                   plan.isPopular
-                    ? "bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-blue-400 shadow-2xl scale-105 ring-4 ring-blue-200 ring-opacity-50"
+                    ? "bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-blue-400 shadow-2xl hover:scale-105 ring-4 ring-blue-200 ring-opacity-50"
                     : plan.isPremium
-                      ? "bg-gradient-to-br from-purple-50 to-violet-100 border-3 border-purple-400 shadow-xl ring-4 ring-purple-200 ring-opacity-50"
-                      : "bg-gradient-to-br from-green-50 to-emerald-100 border-3 border-green-400 shadow-lg"
+                    ? "bg-gradient-to-br from-purple-50 to-violet-100 border-3 border-purple-400 shadow-xl ring-4 ring-purple-200 ring-opacity-50"
+                    : "bg-gradient-to-br from-green-50 to-emerald-100 border-3 border-green-400 shadow-lg"
                 }`}
                 data-testid={`card-plan-${plan.name.toLowerCase()}`}
               >
                 {/* Badge */}
                 {plan.isPopular && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white animate-bounce text-nowrap">
+                    <div className="bg-gradient-to-r from-purple-500 to-violet-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white animate-bounce text-nowrap">
                       🔥 MOST POPULAR
                     </div>
                   </div>
@@ -262,7 +200,7 @@ export default function PlanSection() {
 
                 {plan.isPremium && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-purple-500 to-violet-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white text-nowrap">
+                    <div className="bg-gradient-to-r  from-blue-500 to-indigo-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white text-nowrap">
                       ⭐ PREMIUM CHOICE
                     </div>
                   </div>
@@ -301,11 +239,11 @@ export default function PlanSection() {
 
                   {/* Sessions Info */}
                   <div className="bg-white rounded-2xl p-6 shadow-inner mb-6 border-2 border-gray-100">
-                    <div className="text-4xl font-black  mb-2 text-blue-800">
+                    <div className={`text-5xl font-black  mb-2 ${plan.text}`}>
                       {plan.sessions}
                     </div>
-                    <div className="text-lg font-bold mb-3 text-blue-600">
-                       Sessions
+                    <div className={`text-lg font-bold mb-3 ${plan.text}`}>
+                      Session{plan.sessions > 1 && "s"}
                     </div>
 
                     {/* <div className="text-4xl font-black  mb-2 text-green-800">
@@ -343,8 +281,29 @@ export default function PlanSection() {
                   <ul className="space-y-3 max-h-80 overflow-y-auto custom-scrollbar">
                     {allFeatures.map((feature, featureIndex) => {
                       const isAvailable = plan.availableFeatures.includes(
-                        feature.id,
+                        feature.id
                       );
+                      if (
+                        (plan.id === "pro" &&
+                          [
+                            "quick_match",
+                            "query_analysis",
+                            "actionable_advice",
+                          ].includes(feature.id)) ||
+                        (plan.id === "elite" &&
+                          [
+                            "quick_match",
+                            "query_analysis",
+                            "actionable_advice",
+                            "challenge_analysis",
+                            "clear_roadmap",
+                            "progress_tracking",
+                            "assurance",
+                            "progress",
+                          ].includes(feature.id))
+                      ) {
+                        return null; // Skip Starter and Pro features for Pro and Elite plans
+                      }
                       return (
                         <li
                           key={featureIndex}
@@ -356,8 +315,8 @@ export default function PlanSection() {
                                 ? plan.color === "blue"
                                   ? "text-blue-500"
                                   : plan.color === "purple"
-                                    ? "text-purple-500"
-                                    : "text-green-500"
+                                  ? "text-purple-500"
+                                  : "text-green-500"
                                 : "text-gray-300"
                             }`}
                           >
@@ -412,7 +371,7 @@ export default function PlanSection() {
                   onClick={() => {
                     window.open(
                       "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship program.",
-                      "_blank",
+                      "_blank"
                     );
                   }}
                   data-testid={`button-whatsapp-${plan.name.toLowerCase()}`}
@@ -432,10 +391,10 @@ export default function PlanSection() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
             <div className="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="w-16 h-16 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center mb-4">
-                <Shield className="text-white w-8 h-8" />
+                <Check className="text-white w-8 h-8" />
               </div>
               <span className="text-lg font-bold text-gray-800">
-                5-Day Money-Back Guarantee
+                Verified Mentors
               </span>
             </div>
             <div className="flex flex-col items-center text-center p-6 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -463,8 +422,9 @@ export default function PlanSection() {
                 Ready to Accelerate Your Career Growth? 🚀
               </h3>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed max-w-3xl mx-auto">
-                Whether you need instant clarity, deep analysis, or long-term growth mastery - 
-                our expert mentors are ready to guide you to success. Choose your path and start your transformation today!
+                Whether you need instant clarity, deep analysis, or long-term
+                growth mastery - our expert mentors are ready to guide you to
+                success. Choose your path and start your transformation today!
               </p>
               <Button
                 size="lg"
@@ -481,8 +441,10 @@ export default function PlanSection() {
 Can you help me choose the right plan and get started?`;
 
                   window.open(
-                    `https://wa.me/6369997653?text=${encodeURIComponent(message)}`,
-                    "_blank",
+                    `https://wa.me/6369997653?text=${encodeURIComponent(
+                      message
+                    )}`,
+                    "_blank"
                   );
                 }}
                 data-testid="button-whatsapp-main"

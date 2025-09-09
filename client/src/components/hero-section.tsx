@@ -80,9 +80,9 @@ export default function HeroSection() {
                 variant="outline"
                 className="border-2 border-purple-300 text-purple-700 bg-purple-50 px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg lg:text-xl hover:bg-purple-100 hover:border-purple-400 transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center group"
                 onClick={() => {
-                  const domainsSection = document.getElementById("domains");
+                  const domainsSection = document.getElementById("plan");
                   if (domainsSection) {
-                    const navbarHeight = 120; // Account for navbar height and extra spacing
+                    const navbarHeight = 0;
                     const elementPosition = domainsSection.getBoundingClientRect().top + window.pageYOffset;
                     const offsetPosition = elementPosition - navbarHeight;
                     
@@ -95,7 +95,7 @@ export default function HeroSection() {
                 data-testid="button-explore-programs"
               >
                 <Play className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 group-hover:animate-pulse" />
-                Explore Programs
+                Explore Journey
               </Button>
               {/* <Button
                 variant="outline"
