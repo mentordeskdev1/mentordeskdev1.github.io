@@ -54,7 +54,7 @@ export default function Footer() {
                 <Rocket className="text-white w-5 h-5 group-hover:animate-bounce" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-                MentorDesk
+                MentoDesk
               </span>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -156,7 +156,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; 2025 MentorDesk. All rights reserved. | Empowering careers through expert mentorship.</p>
+          <p>&copy; 2025 MentoDesk. All rights reserved. | Empowering careers through expert mentorship.</p>
         </div>
       </div>
     </footer>

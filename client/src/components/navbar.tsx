@@ -12,7 +12,7 @@ export default function Navbar() {
               <Rocket className="text-white w-4 h-4 sm:w-5 sm:h-5 group-hover:animate-bounce" />
             </div>
             <span className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
-              MentorDesk
+              MentoDesk
             </span>
           </div>
 

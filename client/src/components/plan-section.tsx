@@ -11,6 +11,7 @@ import {
   Crown,
   Zap,
   Star,
+  CheckCircle,
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 
@@ -33,9 +34,7 @@ export default function PlanSection() {
       id: "progress_tracking",
       text: "Progress tracking with guided check-ins",
     },
-    { id: "progress", text: "Progress-based extension" },
-    { id: "assurance", text: "Assurance of challenge resolution" },
-
+    { id: "gs_extension", text: "Upgrade & Extend" },
     // 🌟 Career Mastery (Elite Plan)
     {
       id: "career_analysis",
@@ -52,22 +51,26 @@ export default function PlanSection() {
     { id: "preparation", text: "Pre-placement preparation" },
     { id: "mock_interviews", text: "Mock interviews" },
     { id: "assessments", text: "Assessments" },
-    { id: "extension", text: "Growth-based extension" },
+    { id: "cm_extension", text: "Upgrade & Extend" },
   ];
 
   const plans = [
     {
-      id: "starter",
-      name: "Starter",
-      subtitle: "Instant Clarity Call",
-      duration: "30 Minutes",
+      id: "instant",
+      name: "Clarity Call",
+      subtitle: "Get instant answers to your toughest career questions",
+      duration: "1 Day",
       validity: "Same Day",
       type: "1-on-1 Connect",
       sessions: 1,
       dcSessions: 1,
       mocks: 0,
       overallMocks: 0,
-      bestFor: "Urgent career doubts resolved with fast solutions in a day",
+      bestFor: [
+        "Professionals needing immediate clarity",
+        "Quick solutions for career challenges",
+        "Instant expert guidance",
+      ],
       icon: Target,
       // Features available in this plan
       availableFeatures: ["quick_match", "query_analysis", "actionable_advice"],
@@ -78,26 +81,30 @@ export default function PlanSection() {
       bg: "bg-green-100",
     },
     {
-      id: "pro",
-      name: "Pro",
-      subtitle: "Growth Sprint",
-      duration: "2 Weeks (Extendable)",
+      id: "short",
+      name: "Growth Sprint",
+      subtitle:
+        "Specific career challenges resolved with focused short-term guidance",
+      duration: "1 Month",
       validity: "1 Month",
       type: "1-on-1 Connect",
       sessions: 12,
       dcSessions: 12,
       mocks: 2,
       overallMocks: 1,
-      bestFor:
-        "Specific career challenges resolved with focused short-term guidance",
       icon: Zap,
+      bestFor: [
+        "Deep analysis of exact problems",
+        "Progress tracking & soft skills development",
+        "Resume building & job referrals",
+        "Complete career transformation",
+      ],
       // Features available in this plan
       availableFeatures: [
         "challenge_analysis",
         "clear_roadmap",
         "progress_tracking",
-        "assurance",
-        "progress",
+        "gs_extension",
       ],
       color: "blue",
       gradient: "from-blue-50 to-indigo-100",
@@ -107,20 +114,25 @@ export default function PlanSection() {
       isPremium: true,
     },
     {
-      id: "elite",
-      name: "Elite",
-      subtitle: "Career Mastery",
-      duration: "1 Month (Growth-Based Extension)",
+      id: "long",
+      name: "Career Mastery",
+      subtitle:
+        "Long-term career transformation through guided improvement and self-development",
+      duration: "2 Months",
       validity: "3 Months",
       type: "1-on-1 and Group Connect",
       sessions: 24,
       dcSessions: 24,
       mocks: 4,
       overallMocks: 2,
-      bestFor:
-        "Long-term career transformation through guided improvement and self-development",
       icon: Crown,
       // Features available in this plan
+      bestFor: [
+        "All Pro plan features included",
+        "Self-development & leadership focus",
+        "Long-term growth with extensions",
+        "Group sessions & advanced training",
+      ],
       availableFeatures: [
         "career_analysis",
         "long_term_roadmap",
@@ -131,7 +143,7 @@ export default function PlanSection() {
         "preparation",
         "mock_interviews",
         "assessments",
-        "extension",
+        "cm_extension",
       ],
       color: "purple",
       gradient: "from-purple-50 to-violet-100",
@@ -157,19 +169,21 @@ export default function PlanSection() {
         <div className="text-center mb-16 sm:mb-20">
           <div className="inline-flex items-center bg-gradient-to-r from-orange-100 via-red-100 to-pink-100 rounded-full px-6 py-3 mb-6 animate-pulse shadow-lg">
             <span className="text-orange-600 text-sm font-bold tracking-wide">
-              🔥 Exclusive Limited-Time Offers for New Members
+              🔥 Big Savings Start Here – Join Today Before It’s Gone
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-6xl font-black text-gray-900 mb-6 tracking-tight">
             Choose Your{" "}
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Career Journey
+              Career Plans
             </span>
           </h2>
           <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Transform your career with industry experts, daily support, live
-            mentoring sessions, and personalized guidance
-          </p>
+            Achieve faster results with personalized guidance, live mentoring,
+            career support, interview tips, personal development, and progress
+            tracking.
+            <br /> Choose your plan today.{" "}
+          </p>{" "}
         </div>
 
         {/* Plans Grid */}
@@ -180,7 +194,7 @@ export default function PlanSection() {
             return (
               <div
                 key={plan.id}
-                className={`relative rounded-3xl p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl group backdrop-blur-sm ${
+                className={`relative rounded-3xl p-4 sm:p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl group backdrop-blur-sm ${
                   plan.isPopular
                     ? "bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-blue-400 shadow-2xl hover:scale-105 ring-4 ring-blue-200 ring-opacity-50"
                     : plan.isPremium
@@ -225,7 +239,7 @@ export default function PlanSection() {
                   <h3 className="text-3xl font-black text-gray-900 mb-3">
                     {plan.name}
                   </h3>
-                  <p className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
+                  <p className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
                     {plan.subtitle}
                   </p>
 
@@ -239,19 +253,19 @@ export default function PlanSection() {
 
                   {/* Sessions Info */}
                   <div className="bg-white rounded-2xl p-6 shadow-inner mb-6 border-2 border-gray-100">
-                    <div className={`text-5xl font-black  mb-2 ${plan.text}`}>
+                    <div className="text-4xl font-black  mb-2 text-blue-800">
                       {plan.sessions}
                     </div>
-                    <div className={`text-lg font-bold mb-3 ${plan.text}`}>
+                    <div className={`text-xl font-bold mb-4 text-blue-600`}>
                       Session{plan.sessions > 1 && "s"}
                     </div>
 
-                    {/* <div className="text-4xl font-black  mb-2 text-green-800">
-                      {plan.dcSessions}
+                    <div className="text-4xl font-black  mb-2 text-green-800">
+                      {plan.duration}
                     </div>
-                    <div className="text-lg font-bold mb-3 text-green-600">
-                      Assistance Sessions
-                    </div> */}
+                    <div className="text-xl font-bold mb-4 text-green-600">
+                      Duration
+                    </div>
 
                     {/* <div className="text-4xl font-black mb-2 text-purple-800">
                       {plan.mocks} + {plan.overallMocks}
@@ -260,16 +274,50 @@ export default function PlanSection() {
                       Normal Mock + Overall Mock
                     </div> */}
                   </div>
+                </div>
 
-                  {/* Best For */}
-                  <div
-                    className={`p-4 rounded-xl mb-6 ${plan.bg} border-2 ${plan.border}`}
-                  >
-                    <p
-                      className={`text-sm font-black ${plan.text} leading-relaxed`}
-                    >
-                      💡 Best for: {plan.bestFor}
-                    </p>
+                {/* Best For */}
+                <div
+                  className={`p-4 rounded-xl mb-6 ${plan.bg} border-2 ${plan.border} relative overflow-hidden`}
+                >
+                  {/* Decorative background elements */}
+                  <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-white/20 to-white/10 rounded-full blur-xl"></div>
+                  <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-br from-white/15 to-white/5 rounded-full blur-lg"></div>
+
+                  <div className="relative z-10">
+                    <div className={`flex items-center mb-4 border-b-2 ${plan.border} pb-3`}>
+                      <div
+                        className={`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${
+                          plan.color === "blue"
+                            ? "bg-blue-500"
+                            : plan.color === "purple"
+                            ? "bg-purple-500"
+                            : "bg-green-500"
+                        } shadow-lg`}
+                      >
+                        <span className="text-white text-sm font-bold">💡</span>
+                      </div>
+                      <h4
+                        className={`text-lg font-black ${plan.text} text-center`}
+                      >
+                        Perfect For:
+                      </h4>
+                    </div>
+
+                    <div className="space-y-2">
+                    <div className="grid gap-2 sm:gap-3">
+                          {plan.bestFor.map((point: string, index: number) => (
+                            <div key={index} className="flex items-start group rounded-lg p-2 -m-2 transition-colors">
+                              <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-3 mt-0.5 shadow-md group-hover:scale-110 transition-transform">
+                                <span className="text-white text-xs sm:text-sm font-bold">✓</span>
+                              </div>
+                              <div className={`flex-1 text-sm ${plan.text} leading-relaxed group-hover:${plan.text} transition-colors`}>
+                                {point.replace('✅ ', '')}
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                    </div>
                   </div>
                 </div>
 
@@ -284,13 +332,13 @@ export default function PlanSection() {
                         feature.id
                       );
                       if (
-                        (plan.id === "pro" &&
+                        (plan.id === "short" &&
                           [
                             "quick_match",
                             "query_analysis",
                             "actionable_advice",
                           ].includes(feature.id)) ||
-                        (plan.id === "elite" &&
+                        (plan.id === "long" &&
                           [
                             "quick_match",
                             "query_analysis",
@@ -299,7 +347,7 @@ export default function PlanSection() {
                             "clear_roadmap",
                             "progress_tracking",
                             "assurance",
-                            "progress",
+                            "gs_extension",
                           ].includes(feature.id))
                       ) {
                         return null; // Skip Starter and Pro features for Pro and Elite plans
@@ -428,7 +476,7 @@ export default function PlanSection() {
               </p>
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white px-12 py-6 text-xl font-black shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105 rounded-2xl"
+                className="bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white px-4 sm:px-6 md:px-8 lg:px-12 py-3 sm:py-4 md:py-5 lg:py-6 text-base sm:text-lg md:text-xl font-black shadow-2xl hover:shadow-3xl transition-all transform hover:scale-105 rounded-2xl w-full sm:w-auto"
                 onClick={() => {
                   const message = `Hi! I want to know more about your career transformation plans and get started with my journey. 
 
@@ -441,10 +489,8 @@ export default function PlanSection() {
 Can you help me choose the right plan and get started?`;
 
                   window.open(
-                    `https://wa.me/6369997653?text=${encodeURIComponent(
-                      message
-                    )}`,
-                    "_blank"
+                    `https://wa.me/6369997653?text=${encodeURIComponent(message)}`,
+                    "_blank",
                   );
                 }}
                 data-testid="button-whatsapp-main"

@@ -51,13 +51,16 @@ export default function HeroSection() {
 
             {/* Compelling subtitle */}
             <p className="text-base sm:text-lg lg:text-xl xl:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed font-medium">
-              <span className="text-orange-600 font-semibold">
-                Instant & Daily Mentor Calls
+              <div className="font-semibold mb-2 sm:mb-4">
+                Stuck in your career and don’t know what’s next?
+              </div>{" "}
+              <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
+                MentoDesk
               </span>{" "}
-              — Unlock
-              <span className="text-purple-600 font-bold">
+              is here to
+              <span className="font-bold">
                 {" "}
-                 Clarity, Direction, and Growth.
+                listen, guide, and walk the path with you.
               </span>
             </p>
 
@@ -68,7 +71,7 @@ export default function HeroSection() {
                 onClick={() => {
                   window.open(
                     "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship program.",
-                    "_blank",
+                    "_blank"
                   );
                 }}
                 data-testid="button-whatsapp-chat"
@@ -83,19 +86,21 @@ export default function HeroSection() {
                   const domainsSection = document.getElementById("plan");
                   if (domainsSection) {
                     const navbarHeight = 0;
-                    const elementPosition = domainsSection.getBoundingClientRect().top + window.pageYOffset;
+                    const elementPosition =
+                      domainsSection.getBoundingClientRect().top +
+                      window.pageYOffset;
                     const offsetPosition = elementPosition - navbarHeight;
-                    
+
                     window.scrollTo({
                       top: offsetPosition,
-                      behavior: "smooth"
+                      behavior: "smooth",
                     });
                   }
                 }}
                 data-testid="button-explore-programs"
               >
                 <Play className="w-5 h-5 sm:w-6 sm:h-6 mr-2 sm:mr-3 group-hover:animate-pulse" />
-                Explore Journey
+                Explore Plans
               </Button>
               {/* <Button
                 variant="outline"
