@@ -324,14 +324,14 @@ export default function PlanSection() {
         </div>
 
         {/* Plans Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 lg:gap-10 mb-20">
           {plans.map((plan, index) => {
             const IconComponent = plan.icon;
 
             return (
               <div
                 key={plan.id}
-                className={`relative rounded-3xl p-4 sm:p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl group backdrop-blur-sm ${
+                className={`relative rounded-3xl p-4 sm:p-8 transition-all duration-500 xs:hover:scale-105 xs:hover:shadow-2xl group backdrop-blur-sm ${
                   plan.isPopular
                     ? "bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-blue-400 shadow-2xl ring-4 ring-blue-200 ring-opacity-50"
                     : plan.isPremium
