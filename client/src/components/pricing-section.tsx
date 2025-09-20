@@ -311,7 +311,7 @@ export default function PricingSection() {
                   className="w-full py-6 font-bold text-lg bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-2xl group border-2 border-white/20 backdrop-blur-sm rounded-2xl"
                   onClick={() => {
                     window.open(
-                      "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship program.",
+                      "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship plans.",
                       "_blank",
                     );
                   }}

@@ -4,24 +4,21 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   const platformLinks = [
-    { name: "Mentorship Programs", href: "#domains" },
-    { name: "Instant Mentor Talk", href: "#domains" },
-    { name: "Daily Mentorship", href: "#domains" },
+    { name: "Mentorship Plans", href: "#plan" },
     { name: "Join as Mentor", href: "join-mentor" },
   ];
 
   const resourceLinks = [
-    { name: "Career Roadmaps", href: "#domains" },
-    { name: "Mentorship Guide", href: "#domains" },
-    { name: "Career Guidance", href: "#domains" },
-    { name: "360° Growth Plan", href: "#domains" },
+    { name: "Starter Plan", href: "#plan" },
+    { name: "Pro Plan", href: "#plan" },
+    { name: "Elite Plan", href: "#plan" },
+    { name: "Offers", href: "#offers" },
   ];
 
   const supportLinks = [
     { name: "WhatsApp Support", href: "whatsapp" },
     { name: "Contact Us", href: "whatsapp" },
-    { name: "Help Center", href: "whatsapp" },
-    { name: "Get Started", href: "#domains" },
+    { name: "Get Started", href: "#plan" },
   ];
 
   const handleLinkClick = (href: string) => {
@@ -32,7 +29,7 @@ export default function Footer() {
       }
     } else if (href === "whatsapp") {
       window.open(
-        "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship program.",
+        "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship plans.",
         "_blank"
       );
     } else if (href === "join-mentor") {

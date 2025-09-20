@@ -19,46 +19,152 @@ export default function PlanSection() {
   // Comprehensive feature list for all plans
   // Comprehensive feature list for all plans
   const allFeatures = [
-    // 🌟 Instant Clarity Call (Day Plan)
-    { id: "quick_match", text: "Quick mentor matching" },
-    { id: "query_analysis", text: "Detailed query analysis" },
-    { id: "actionable_advice", text: "Actionable advice & feedback" },
+    // 🌟 Instant Clarity (Day Plan)
+    {
+      id: "p1",
+      key: "p1_mentor_session",
+      text: "1-on-1 mentor session",
+    },
+    {
+      id: "p1",
+      key: "p1_career_query_analysis",
+      text: "Detailed analysis of your career enquiries",
+    },
+    {
+      id: "p1",
+      key: "p1_mentor_insights",
+      text: "Insights from mentors to guide your next steps",
+    },
+    {
+      id: "p1",
+      key: "p1_decision_support",
+      text: "Effective decision-making support",
+    },
+    {
+      id: "p1",
+      key: "p1_clarity_boost",
+      text: "Get unstuck and move forward with clarity",
+    },
+    {
+      id: "p1",
+      key: "p1_plan_extension",
+      text: "Option to extend or upgrade plan",
+    },
 
     // 🌟 Growth Sprint (Pro Plan)
     {
-      id: "challenge_analysis",
-      text: "In-depth analysis of specific challenge",
+      id: "p2",
+      key: "p2_mentor_sessions",
+      text: "Multiple 1-on-1 mentor sessions",
     },
-    { id: "clear_roadmap", text: "Clear roadmap to solve the challenge" },
     {
-      id: "progress_tracking",
-      text: "Progress tracking with guided check-ins",
+      id: "p2",
+      key: "p2_career_challenge_review",
+      text: "Complete evaluation of your career challenge",
     },
-    { id: "gs_extension", text: "Upgrade & Extend" },
+    {
+      id: "p2",
+      key: "p2_actionable_guidance",
+      text: "Actionable advice and practical solutions",
+    },
+    { id: "p2", key: "p2_structured_report", text: "Structured career growth report to overcome challenge" }, // split
+    {
+      id: "p2",
+      key: "p2_career_roadmap",
+      text: "Step-by-step career roadmap to overcome challenge",
+    },
+    {
+      id: "p2",
+      key: "p2_progress_tracking",
+      text: "Ongoing progress tracking and support",
+    },
+    {
+      id: "p2",
+      key: "p2_mentor_feedback",
+      text: "Mentor feedback and check-ins",
+    },
+    {
+      id: "p2",
+      key: "p2_career_resolution",
+      text: "Resolve your career challenge and move forward",
+    },
+    {
+      id: "p2",
+      key: "p2_plan_extension",
+      text: "Option to extend or upgrade plan",
+    },
+
     // 🌟 Career Mastery (Elite Plan)
     {
-      id: "career_analysis",
-      text: "In-depth analysis across all career challenges",
+      id: "p3",
+      key: "p3_mentor_sessions",
+      text: "Multiple personalized 1-on-1 mentor sessions",
     },
     {
-      id: "long_term_roadmap",
-      text: "Structured roadmap for long-term growth",
+      id: "p3",
+      key: "p3_development_coach",
+      text: "Access to personal development coach",
     },
-    { id: "continuous_tracking", text: "Continuous progress tracking" },
-    { id: "personal_development", text: "Personal development" },
-    { id: "productivity", text: "10x productivity guidance" },
-    { id: "communication", text: "Communication skills training" },
-    { id: "preparation", text: "Pre-placement preparation" },
-    { id: "mock_interviews", text: "Mock interviews" },
-    { id: "assessments", text: "Assessments" },
-    { id: "cm_extension", text: "Upgrade & Extend" },
+    {
+      id: "p3",
+      key: "p3_career_evaluation",
+      text: "In-depth evaluation of all your career challenges",
+    },
+    {
+      id: "p3",
+      key: "p3_career_report",
+      text: "Structured career growth report to overcome challenges",
+    },
+    { id: "p3", key: "p3_career_roadmap", text: "Step-by-step career roadmap to overcome challenges" },
+    {
+      id: "p3",
+      key: "p3_tracking_assistance",
+      text: "Continuous tracking & assistance",
+    },
+    {
+      id: "p3",
+      key: "p3_advanced_feedback",
+      text: "Advanced mentor feedback & check-ins",
+    },
+    {
+      id: "p3",
+      key: "p3_exclusive_masterclass",
+      text: "Exclusive masterclass sessions",
+    },
+    {
+      id: "p3",
+      key: "p3_placement_support",
+      text: "Placement preparation support",
+    },
+    { id: "p3", key: "p3_resume_support", text: "Resume building support" },
+    { id: "p3", key: "p3_cv_guidance", text: "CV building guidance" },
+    {
+      id: "p3",
+      key: "p3_communication_skills",
+      text: "Master communication skills",
+    },
+    {
+      id: "p3",
+      key: "p3_confidence_productivity",
+      text: "Boost confidence & productivity",
+    },
+    {
+      id: "p3",
+      key: "p3_career_transformation",
+      text: "Transform your career, achieve success, and move forward",
+    },
+    { id: "p3", key: "p3_plan_extension", text: "Option to extend plan" },
   ];
 
   const plans = [
     {
-      id: "instant",
-      name: "Clarity Call",
-      subtitle: "Get instant answers to your toughest career questions",
+      id: "p1",
+      name: "Instant Clarity",
+      description:
+        "Get quick solutions and mentor insights to make decisive moves",
+      question: "Unsure about your next step?",
+      solution:
+        "Get quick solutions and mentor insights to make decisive moves",
       duration: "1 Day",
       validity: "Same Day",
       type: "1-on-1 Connect",
@@ -67,24 +173,37 @@ export default function PlanSection() {
       mocks: 0,
       overallMocks: 0,
       bestFor: [
-        "Professionals needing immediate clarity",
-        "Quick solutions for career challenges",
-        "Instant expert guidance",
+        "Unsure which career path or domain to pursue",
+        "Conflicted between multiple job offers and opportunities",
+        "Unclear about how to switch industries or roles",
+        "Struggling to make confident career decisions",
+        "Overwhelmed by growth options and next steps etc...",
       ],
       icon: Target,
       // Features available in this plan
-      availableFeatures: ["quick_match", "query_analysis", "actionable_advice"],
+      availableFeatures: [
+        "p1_mentor_session",
+        "p1_career_query_analysis",
+        "p1_mentor_insights",
+        "p1_decision_support",
+        "p1_clarity_boost",
+        "p1_plan_extension",
+      ],
+      excludeFeatures: ["gs_extension"],
       color: "green",
       gradient: "from-green-50 to-emerald-100",
       border: "border-green-300",
       text: "text-green-800",
       bg: "bg-green-100",
+      primaryBg: "bg-gradient-to-r from-green-500 to-emerald-600",
     },
     {
-      id: "short",
+      id: "p2",
       name: "Growth Sprint",
-      subtitle:
-        "Specific career challenges resolved with focused short-term guidance",
+      description: "Crack your toughest career challenge with expert guidance",
+      question: "Facing a career challenge?",
+      solution:
+        "Get full analysis and actionable mentorship to overcome specific career challenges and achieve short-term measurable growth",
       duration: "1 Month",
       validity: "1 Month",
       type: "1-on-1 Connect",
@@ -94,33 +213,43 @@ export default function PlanSection() {
       overallMocks: 1,
       icon: Zap,
       bestFor: [
-        "Deep analysis of exact problems",
-        "Progress tracking & soft skills development",
-        "Resume building & job referrals",
-        "Complete career transformation",
+        "Struggling to crack interviews effectively",
+        "Applying to jobs but rarely receiving interview calls",
+        "Resume not standing out, failing to get recruiter attention",
+        "Struggling to gain confidence in decision-making during transitions",
+        "Finding it hard to negotiate offers or evaluate opportunities etc...",
       ],
       // Features available in this plan
       availableFeatures: [
-        "challenge_analysis",
-        "clear_roadmap",
-        "progress_tracking",
-        "gs_extension",
+        "p2_mentor_sessions",
+        "p2_career_challenge_review",
+        "p2_actionable_guidance",
+        "p2_structured_report",
+        "p2_career_roadmap",
+        "p2_progress_tracking",
+        "p2_mentor_feedback",
+        "p2_career_resolution",
+        "p2_plan_extension",
       ],
-      color: "blue",
-      gradient: "from-blue-50 to-indigo-100",
-      border: "border-blue-300",
-      text: "text-blue-800",
-      bg: "bg-blue-100",
+      excludeFeatures: ["gs_extension"],
+      gradient: "from-purple-50 to-violet-100",
+      border: "border-purple-300",
+      text: "text-purple-800",
+      bg: "bg-purple-100",
+      primaryBg: "bg-gradient-to-r from-purple-500 to-violet-600",
       isPremium: true,
     },
     {
-      id: "long",
+      id: "p3",
       name: "Career Mastery",
-      subtitle:
-        "Long-term career transformation through guided improvement and self-development",
+      description:
+        "Personalized 360° mentorship to overcome all your challenges and transform your career",
+      question: "Ready for career transformation?",
+      solution:
+        "Get in-depth analysis across all challenges, actionable solutions, and completion milestones for long-term growth",
       duration: "2 Months",
       validity: "3 Months",
-      type: "1-on-1 and Group Connect",
+      type: "1-on-1 & Group Connect",
       sessions: 24,
       dcSessions: 24,
       mocks: 4,
@@ -128,28 +257,35 @@ export default function PlanSection() {
       icon: Crown,
       // Features available in this plan
       bestFor: [
-        "All Pro plan features included",
-        "Self-development & leadership focus",
-        "Long-term growth with extensions",
-        "Group sessions & advanced training",
+        "Struggling to overcome multiple career challenges strategically",
+        "Difficulty communicating effectively in professional settings",
+        "Balancing work, personal life, and career growth effectively",
+        "Preparing for major transitions like promotions or leadership roles",
+        "Facing challenges in confidence, decision-making, and goal achievement etc...",
       ],
       availableFeatures: [
-        "career_analysis",
-        "long_term_roadmap",
-        "continuous_tracking",
-        "personal_development",
-        "productivity",
-        "communication",
-        "preparation",
-        "mock_interviews",
-        "assessments",
-        "cm_extension",
+        "p3_mentor_sessions",
+        "p3_development_coach",
+        "p3_career_evaluation",
+        "p3_career_report",
+        "p3_career_roadmap",
+        "p3_tracking_assistance",
+        "p3_advanced_feedback",
+        "p3_exclusive_masterclass",
+        "p3_placement_support",
+        "p3_resume_support",
+        "p3_cv_guidance",
+        "p3_communication_skills",
+        "p3_confidence_productivity",
+        "p3_career_transformation",
+        "p3_plan_extension",
       ],
       color: "purple",
-      gradient: "from-purple-50 to-violet-100",
-      border: "border-purple-300",
-      text: "text-purple-800",
-      bg: "bg-purple-100",
+      gradient: "from-blue-50 to-indigo-100",
+      border: "border-blue-300",
+      text: "text-blue-800",
+      bg: "bg-blue-100",
+      primaryBg: "bg-gradient-to-r from-blue-500 to-indigo-600",
       isPopular: true,
     },
   ];
@@ -179,15 +315,16 @@ export default function PlanSection() {
             </span>
           </h2>
           <p className="text-xl sm:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Achieve faster results with personalized guidance, live mentoring,
+            {/* Achieve faster results with personalized guidance, live mentoring,
             career support, interview tips, personal development, and progress
             tracking.
-            <br /> Choose your plan today.{" "}
+            <br /> Choose your plan today.{" "} */}
+            Every great journey starts with a choice
           </p>{" "}
         </div>
 
         {/* Plans Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 lg:gap-10 mb-20">
           {plans.map((plan, index) => {
             const IconComponent = plan.icon;
 
@@ -196,26 +333,26 @@ export default function PlanSection() {
                 key={plan.id}
                 className={`relative rounded-3xl p-4 sm:p-8 transition-all duration-500 hover:scale-105 hover:shadow-2xl group backdrop-blur-sm ${
                   plan.isPopular
-                    ? "bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-blue-400 shadow-2xl hover:scale-105 ring-4 ring-blue-200 ring-opacity-50"
+                    ? "bg-gradient-to-br from-blue-50 to-indigo-100 border-3 border-blue-400 shadow-2xl ring-4 ring-blue-200 ring-opacity-50"
                     : plan.isPremium
                     ? "bg-gradient-to-br from-purple-50 to-violet-100 border-3 border-purple-400 shadow-xl ring-4 ring-purple-200 ring-opacity-50"
-                    : "bg-gradient-to-br from-green-50 to-emerald-100 border-3 border-green-400 shadow-lg"
+                    : "bg-gradient-to-br from-green-50 to-emerald-100 border-3 border-green-400 shadow-lg ring-4 ring-green-200 ring-opacity-50 "
                 }`}
                 data-testid={`card-plan-${plan.name.toLowerCase()}`}
               >
                 {/* Badge */}
                 {plan.isPopular && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r from-purple-500 to-violet-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white animate-bounce text-nowrap">
-                      🔥 MOST POPULAR
+                    <div className="bg-gradient-to-r from-blue-500 to-indigo-600  text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white animate-bounce text-nowrap">
+                      🔥 ELITE
                     </div>
                   </div>
                 )}
 
                 {plan.isPremium && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
-                    <div className="bg-gradient-to-r  from-blue-500 to-indigo-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white text-nowrap">
-                      ⭐ PREMIUM CHOICE
+                    <div className="bg-gradient-to-r from-purple-500 to-violet-600  text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white text-nowrap">
+                      ⭐ PRO
                     </div>
                   </div>
                 )}
@@ -223,7 +360,7 @@ export default function PlanSection() {
                 {!plan.isPopular && !plan.isPremium && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
                     <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white text-nowrap">
-                      🚀 PERFECT START
+                      💡 STARTER
                     </div>
                   </div>
                 )}
@@ -231,40 +368,90 @@ export default function PlanSection() {
                 {/* Header */}
                 <div className="text-center mb-8 pt-6">
                   <div
-                    className={`w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-br ${plan.gradient} flex items-center justify-center shadow-lg`}
+                    className={`w-20 h-20 mx-auto mb-6 rounded-full bg-gradient-to-r ${plan.gradient} flex items-center justify-center shadow-lg`}
                   >
                     <IconComponent className={`w-10 h-10 ${plan.text}`} />
                   </div>
 
-                  <h3 className="text-3xl font-black text-gray-900 mb-3">
+                  <h3 className="text-3xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent mb-3">
                     {plan.name}
                   </h3>
-                  <p className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">
-                    {plan.subtitle}
+                  <p className={`text-lg font-bold ${plan.text} mb-6`}>
+                    {plan.description}
                   </p>
+                  {/* <p className="text-lg font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                    {plan.question}
+                  </p> */}
+                  {/* <p className="text-sm sm:text-base font-medium text-gray-600 leading-relaxed px-2 mb-6">
+                    {plan.solution}
+                  </p> */}
 
                   {/* Plan Type */}
                   <div className="flex items-center justify-center space-x-2 mb-6">
-                    <Users className="w-4 h-4 text-purple-600" />
-                    <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-bold text-sm">
+                    <Users
+                      className={`w-5 h-5 text-purple-60 ${
+                        plan.id === "p1"
+                          ? "text-green-500"
+                          : plan.id === "p2"
+                          ? "text-purple-500"
+                          : "text-blue-500"
+                      }`}
+                    />
+                    <span
+                      className={`${
+                        plan.id === "p1"
+                          ? "bg-green-100 shadow-md ring-2 ring-green-300"
+                          : plan.id === "p2"
+                          ? "bg-purple-100 shadow-md ring-2 ring-purple-300"
+                          : "bg-blue-100 shadow-md ring-2 ring-blue-300"
+                      } ${
+                        plan.id === "p1"
+                          ? "text-green-500"
+                          : plan.id === "p2"
+                          ? "text-purple-500"
+                          : "text-blue-500"
+                      } px-4 py-2 rounded-full font-bold text-sm`}
+                    >
                       {plan.type}
                     </span>
                   </div>
 
                   {/* Sessions Info */}
-                  <div className="bg-white rounded-2xl p-6 shadow-inner mb-6 border-2 border-gray-100">
-                    <div className="text-4xl font-black  mb-2 text-blue-800">
-                      {plan.sessions}
-                    </div>
-                    <div className={`text-xl font-bold mb-4 text-blue-600`}>
-                      Session{plan.sessions > 1 && "s"}
-                    </div>
+                  <div className="bg-white rounded-2xl p-6 shadow-inner mb-6 border-2 border-gray-100 ">
+                    <div className="text-center">
+                      <div className="text-center mb-5">
+                        <div
+                          className={`w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-2 rounded-full ${plan.primaryBg} flex items-center justify-center`}
+                        >
+                          <Users className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                        </div>
+                        <div
+                          className={`text-2xl sm:text-4xl font-black ${plan.text}`}
+                        >
+                          {plan.sessions}
+                        </div>
+                        <div
+                          className={`text-xs sm:text-sm font-bold ${plan.text}`}
+                        >
+                          Session{plan.sessions > 1 && "s"}
+                        </div>
+                      </div>
 
-                    <div className="text-4xl font-black  mb-2 text-green-800">
-                      {plan.duration}
-                    </div>
-                    <div className="text-xl font-bold mb-4 text-green-600">
-                      Duration
+                      <div
+                        className={`w-8 h-8 sm:w-10 sm:h-10 mx-auto mb-2 rounded-full ${plan.primaryBg} flex items-center justify-center`}
+                      >
+                        <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-white" />
+                      </div>
+                      <div
+                        className={`text-2xl sm:text-4xl font-black ${plan.text}`}
+                      >
+                        {plan.duration}
+                      </div>
+                      <div
+                        className={`text-xs sm:text-sm font-bold ${plan.text}`}
+                      >
+                        Duration
+                      </div>
                     </div>
 
                     {/* <div className="text-4xl font-black mb-2 text-purple-800">
@@ -277,22 +464,22 @@ export default function PlanSection() {
                 </div>
 
                 {/* Best For */}
-                <div
-                  className={`p-4 rounded-xl mb-6 ${plan.bg} border-2 ${plan.border} relative overflow-hidden`}
-                >
+                <div className="bg-white rounded-2xl p-6 shadow-inner mb-8 border-2 border-gray-100">
                   {/* Decorative background elements */}
                   <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-white/20 to-white/10 rounded-full blur-xl"></div>
                   <div className="absolute bottom-0 left-0 w-12 h-12 bg-gradient-to-br from-white/15 to-white/5 rounded-full blur-lg"></div>
 
                   <div className="relative z-10">
-                    <div className={`flex items-center mb-4 border-b-2 ${plan.border} pb-3`}>
+                    <div
+                      className={`flex items-center mb-4 border-b-2 ${plan.border} pb-3`}
+                    >
                       <div
                         className={`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${
-                          plan.color === "blue"
-                            ? "bg-blue-500"
-                            : plan.color === "purple"
+                          plan.id === "p1"
+                            ? "bg-green-500"
+                            : plan.id === "p2"
                             ? "bg-purple-500"
-                            : "bg-green-500"
+                            : "bg-blue-500"
                         } shadow-lg`}
                       >
                         <span className="text-white text-sm font-bold">💡</span>
@@ -305,87 +492,94 @@ export default function PlanSection() {
                     </div>
 
                     <div className="space-y-2">
-                    <div className="grid gap-2 sm:gap-3">
-                          {plan.bestFor.map((point: string, index: number) => (
-                            <div key={index} className="flex items-start group rounded-lg p-2 -m-2 transition-colors">
-                              <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-3 mt-0.5 shadow-md group-hover:scale-110 transition-transform">
-                                <span className="text-white text-xs sm:text-sm font-bold">✓</span>
-                              </div>
-                              <div className={`flex-1 text-sm ${plan.text} leading-relaxed group-hover:${plan.text} transition-colors`}>
-                                {point.replace('✅ ', '')}
-                              </div>
+                      <div className="grid gap-2 sm:gap-3">
+                        {plan.bestFor.map((point: string, index: number) => (
+                          <div
+                            key={index}
+                            className="flex items-start group rounded-lg p-2 -m-2 transition-colors"
+                          >
+                            {/* <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-3 mt-0.5 shadow-md group-hover:scale-110 transition-transform">
+                              <span className="text-white text-xs sm:text-sm font-bold">
+                                ✓
+                              </span>
+                            </div> */}
+
+                            <Check
+                              className={`w-5 h-5 mr-2 ${
+                                plan.id === "p1"
+                                  ? "text-green-500"
+                                  : plan.id === "p2"
+                                  ? "text-purple-500"
+                                  : "text-blue-500"
+                              }`}
+                            />
+
+                            <div
+                              className={`flex-1 text-sm font-semibold ${plan.text} leading-relaxed group-hover:${plan.text} transition-colors`}
+                            >
+                              {point.replace("✅ ", "")}
                             </div>
-                          ))}
-                        </div>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 {/* Features */}
-                <div className="bg-white rounded-2xl p-6 shadow-inner mb-8 border-2 border-gray-100">
-                  <h4 className="text-lg font-black text-gray-800 mb-4 text-center border-b-2 border-gray-200 pb-3">
-                    ✨ What's Included:
-                  </h4>
-                  <ul className="space-y-3 max-h-80 overflow-y-auto custom-scrollbar">
-                    {allFeatures.map((feature, featureIndex) => {
-                      const isAvailable = plan.availableFeatures.includes(
-                        feature.id
-                      );
-                      if (
-                        (plan.id === "short" &&
-                          [
-                            "quick_match",
-                            "query_analysis",
-                            "actionable_advice",
-                          ].includes(feature.id)) ||
-                        (plan.id === "long" &&
-                          [
-                            "quick_match",
-                            "query_analysis",
-                            "actionable_advice",
-                            "challenge_analysis",
-                            "clear_roadmap",
-                            "progress_tracking",
-                            "assurance",
-                            "gs_extension",
-                          ].includes(feature.id))
-                      ) {
-                        return null; // Skip Starter and Pro features for Pro and Elite plans
-                      }
-                      return (
+                <div
+                  className={`p-4 rounded-xl mb-6 ${plan.bg} border-2 ${plan.border} relative overflow-hidden`}
+                >
+                  <div
+                    className={`flex items-center mb-4 border-b-2 ${plan.border} pb-3`}
+                  >
+                    <div
+                      className={`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${
+                        plan.id === "p1"
+                          ? "bg-green-500"
+                          : plan.id === "p2"
+                          ? "bg-purple-500"
+                          : "bg-blue-500"
+                      } shadow-lg`}
+                    >
+                      <span className="text-white text-sm font-bold">🎯</span>
+                    </div>
+                    <h4
+                      className={`text-lg font-black ${plan.text} text-center`}
+                    >
+                      What's Included:
+                    </h4>
+                  </div>
+                  <ul className="space-y-3">
+                    {allFeatures
+                      .filter((feature) => feature.id === plan.id) // ✅ Only show features for current plan
+                      .map((feature, featureIndex) => (
                         <li
                           key={featureIndex}
                           className="flex items-start space-x-3 text-sm"
                         >
                           <div
                             className={`w-5 h-5 flex-shrink-0 mt-0.5 ${
-                              isAvailable
-                                ? plan.color === "blue"
-                                  ? "text-blue-500"
-                                  : plan.color === "purple"
-                                  ? "text-purple-500"
-                                  : "text-green-500"
-                                : "text-gray-300"
+                              plan.id === "p1"
+                                ? "text-green-500"
+                                : plan.id === "p2"
+                                ? "text-purple-500"
+                                : "text-blue-500"
                             }`}
                           >
-                            {isAvailable ? (
-                              <Check className="w-5 h-5" />
-                            ) : (
-                              <span className="text-xl">✗</span>
-                            )}
+                            <div className="w-5 h-5 sm:w-6 sm:h-6 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-3 mt-0.5 shadow-md group-hover:scale-110 transition-transform">
+                              <span className="text-white text-xs sm:text-sm font-bold">
+                                ✓
+                              </span>
+                            </div>
                           </div>
                           <span
-                            className={`leading-relaxed font-medium ${
-                              isAvailable
-                                ? "text-gray-800"
-                                : "text-gray-400 line-through"
-                            }`}
+                            className={`flex-1 font-bold text-base ${plan.text} leading-relaxed`}
                           >
                             {feature.text}
                           </span>
                         </li>
-                      );
-                    })}
+                      ))}
                   </ul>
                 </div>
 
@@ -418,7 +612,7 @@ export default function PlanSection() {
                   className="w-full py-6 font-bold text-lg bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 hover:shadow-2xl group border-2 border-white/20 backdrop-blur-sm rounded-2xl"
                   onClick={() => {
                     window.open(
-                      "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship program.",
+                      "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship plans.",
                       "_blank"
                     );
                   }}
@@ -489,8 +683,10 @@ export default function PlanSection() {
 Can you help me choose the right plan and get started?`;
 
                   window.open(
-                    `https://wa.me/6369997653?text=${encodeURIComponent(message)}`,
-                    "_blank",
+                    `https://wa.me/6369997653?text=${encodeURIComponent(
+                      message
+                    )}`,
+                    "_blank"
                   );
                 }}
                 data-testid="button-whatsapp-main"

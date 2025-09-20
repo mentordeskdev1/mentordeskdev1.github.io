@@ -14,21 +14,21 @@ export default function PromotionBanner() {
   // Default offers if API returns empty
   const defaultOffers = [
     {
-      id: "instant30",
-      code: "INSTANT30",
-      title: "30% Off Starter Mentorship",
-      description: "Get 30% off on your instant mentorship session",
+      id: "mentodesk30",
+      code: "MENTODESK30",
+      title: "30% Off Starter Plan",
+      description: "Get instant career clarity with a dedicated 1-on-1 mentorship session at 30% off. Perfect for quick solutions and immediate guidance.",
       discountType: "percentage",
       discountValue: "30",
       validUntil: new Date(Date.now() + 10 * 24 * 60 * 60 * 1000), // 10 days from now
       isActive: true,
     },
     {
-      id: "daily50",
-      code: "DAILY50",
-      title: "50% Off Pro/Elite Mentorship",
+      id: "mentodesk50",
+      code: "MENTODESK50",
+      title: "50% Off Pro/Elite Plan",
       description:
-        "Get 50% off on all regular mentorship courses, perfect for long-term career guidance and skill development",
+        "Level up your career with pro or elite plans. Get 50% off focused guidance, progress tracking, and complete transformation.",
       discountType: "percentage",
       discountValue: "50",
       validUntil: new Date(Date.now() + 10 * 24 * 60 * 60 * 1000), // 10 days from now
@@ -64,7 +64,7 @@ export default function PromotionBanner() {
   }
 
   return (
-    <section className="py-12 bg-gradient-to-r from-purple-600 via-pink-600 to-red-500 relative overflow-hidden">
+    <section id="offers" className="py-12 bg-gradient-to-r from-purple-600 via-pink-600 to-red-500 relative overflow-hidden">
       <div className="absolute inset-0 bg-black/10"></div>
 
       {/* Background decorations */}
@@ -85,7 +85,7 @@ export default function PromotionBanner() {
             Exclusive Discounts for New Members
           </h2>
           <p className="text-white/90 text-lg max-w-2xl mx-auto">
-            Start your mentorship journey with amazing savings. Use these codes
+            Start your mentorship plan with amazing savings. Use these codes
             during onboarding!
           </p>
         </div>

@@ -70,7 +70,7 @@ export default function HeroSection() {
                 className="bg-gradient-to-r from-green-500 via-green-600 to-emerald-600 hover:from-green-600 hover:via-green-700 hover:to-emerald-700 text-white px-6 py-3 sm:px-8 sm:py-4 lg:px-10 lg:py-5 rounded-xl sm:rounded-2xl font-bold text-base sm:text-lg lg:text-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 hover:scale-105 flex items-center justify-center group border-2 border-white/20 backdrop-blur-sm"
                 onClick={() => {
                   window.open(
-                    "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship program.",
+                    "https://wa.me/6369997653?text=Hi, I would like to know more about the mentorship plans.",
                     "_blank"
                   );
                 }}
