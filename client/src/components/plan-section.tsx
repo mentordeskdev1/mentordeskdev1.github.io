@@ -177,7 +177,7 @@ export default function PlanSection() {
         "Conflicted between multiple job offers and opportunities",
         "Unclear about how to switch industries or roles",
         "Struggling to make confident career decisions",
-        "Overwhelmed by growth options and next steps etc...",
+        "Finding it hard to negotiate offers or evaluate opportunities and more...",
       ],
       icon: Target,
       // Features available in this plan
@@ -214,10 +214,11 @@ export default function PlanSection() {
       icon: Zap,
       bestFor: [
         "Struggling to crack interviews effectively",
+        "Lackig clarity on how to improve coding skills and gain expertise",
         "Applying to jobs but rarely receiving interview calls",
         "Resume not standing out, failing to get recruiter attention",
         "Struggling to gain confidence in decision-making during transitions",
-        "Finding it hard to negotiate offers or evaluate opportunities etc...",
+        "Finding it hard to negotiate offers or evaluate opportunities and more...",
       ],
       // Features available in this plan
       availableFeatures: [
@@ -261,7 +262,7 @@ export default function PlanSection() {
         "Difficulty communicating effectively in professional settings",
         "Balancing work, personal life, and career growth effectively",
         "Preparing for major transitions like promotions or leadership roles",
-        "Facing challenges in confidence, decision-making, and goal achievement etc...",
+        "Facing challenges in confidence, decision-making, and goal achievement and more...",
       ],
       availableFeatures: [
         "p3_mentor_sessions",
@@ -450,7 +451,7 @@ export default function PlanSection() {
                       <div
                         className={`text-xs sm:text-sm font-bold ${plan.text}`}
                       >
-                        Duration
+                        Validity
                       </div>
                     </div>
 
