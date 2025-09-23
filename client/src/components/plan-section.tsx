@@ -88,6 +88,8 @@ export default function PlanSection() {
       key: "p2_resume_building",
       text: "Resume and CV building guidance",
     },
+    { id: "p2", key: "assessments", text: "Skill-based assessments" },
+    { id: "p2", key: "mock_interviews", text: "Mock interviews" },
     {
       id: "p2",
       key: "p2_job_portal_profiles",
@@ -155,6 +157,8 @@ export default function PlanSection() {
       key: "p3_resume_building",
       text: "Resume and CV building guidance",
     },
+    { id: "p3", key: "assessments", text: "Skill-based assessments" },
+    { id: "p3", key: "mock_interviews", text: "Mock interviews" },
     {
       id: "p3",
       key: "p3_job_portal_profiles",
@@ -238,7 +242,8 @@ export default function PlanSection() {
     {
       id: "p2",
       name: "Pro",
-      description: "Turn career challenges into opportunities with expert guidance",
+      description:
+        "Turn career challenges into opportunities with expert guidance",
       question: "Facing a career challenge?",
       solution:
         "Get full analysis and actionable mentorship to overcome specific career challenges and achieve short-term measurable growth",
@@ -274,7 +279,7 @@ export default function PlanSection() {
       id: "p3",
       name: "Elite",
       description:
-      "Achieve career mastery & personal growth with 360° personalized mentorship.",
+        "Achieve career mastery & personal growth with 360° personalized mentorship.",
       question: "Ready for career transformation?",
       solution:
         "Get in-depth analysis across all challenges, actionable solutions, and completion milestones for long-term growth",
