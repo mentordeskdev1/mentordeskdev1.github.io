@@ -32,6 +32,11 @@ export default function PlanSection() {
     },
     {
       id: "p1",
+      key: "p1_detailed_report",
+      text: "Structured career growth report with roadmap access",
+    },
+    {
+      id: "p1",
       key: "p1_mentor_insights",
       text: "Insights from mentors to guide your next steps",
     },
@@ -65,18 +70,38 @@ export default function PlanSection() {
     {
       id: "p2",
       key: "p2_actionable_guidance",
-      text: "Actionable advice and practical solutions",
+      text: "Actionable guidance and practical solutions",
     },
-    { id: "p2", key: "p2_structured_report", text: "Structured career growth report to overcome challenge" }, // split
     {
       id: "p2",
-      key: "p2_career_roadmap",
-      text: "Step-by-step career roadmap to overcome challenge",
+      key: "p2_structured_report",
+      text: "Structured career growth report with roadmap access",
+    },
+    { id: "p2", key: "p2_placement", text: "Placement preparation support" },
+    {
+      id: "p2",
+      key: "p2_skill_building",
+      text: "Skill building guidance with curated resources",
+    },
+    {
+      id: "p2",
+      key: "p2_resume_building",
+      text: "Resume and CV building guidance",
+    },
+    {
+      id: "p2",
+      key: "p2_job_portal_profiles",
+      text: "Job portal profile building using (LinkedIn, Naukri, etc.)",
+    },
+    {
+      id: "p2",
+      key: "p2_job_applying_support",
+      text: "Job applying and tracking support",
     },
     {
       id: "p2",
       key: "p2_progress_tracking",
-      text: "Ongoing progress tracking and support",
+      text: "Progress tracking and assistance",
     },
     {
       id: "p2",
@@ -112,32 +137,39 @@ export default function PlanSection() {
     },
     {
       id: "p3",
-      key: "p3_career_report",
-      text: "Structured career growth report to overcome challenges",
-    },
-    { id: "p3", key: "p3_career_roadmap", text: "Step-by-step career roadmap to overcome challenges" },
-    {
-      id: "p3",
-      key: "p3_tracking_assistance",
-      text: "Continuous tracking & assistance",
+      key: "p3_actionable_guidance",
+      text: "Advanced guidance and practical solutions",
     },
     {
       id: "p3",
-      key: "p3_advanced_feedback",
-      text: "Advanced mentor feedback & check-ins",
+      key: "p3_structured_report",
+      text: "Structured career growth report with roadmap access",
+    },
+    {
+      id: "p3",
+      key: "p3_skill_building",
+      text: "Skill building guidance with curated resources",
+    },
+    {
+      id: "p3",
+      key: "p3_resume_building",
+      text: "Resume and CV building guidance",
+    },
+    {
+      id: "p3",
+      key: "p3_job_portal_profiles",
+      text: "Job portal profile building using (LinkedIn, Naukri, etc.)",
+    },
+    {
+      id: "p3",
+      key: "p3_job_applying_support",
+      text: "Job applying and tracking support",
     },
     {
       id: "p3",
       key: "p3_exclusive_masterclass",
       text: "Exclusive masterclass sessions",
     },
-    {
-      id: "p3",
-      key: "p3_placement_support",
-      text: "Placement preparation support",
-    },
-    { id: "p3", key: "p3_resume_support", text: "Resume building support" },
-    { id: "p3", key: "p3_cv_guidance", text: "CV building guidance" },
     {
       id: "p3",
       key: "p3_communication_skills",
@@ -150,6 +182,16 @@ export default function PlanSection() {
     },
     {
       id: "p3",
+      key: "p3_tracking_assistance",
+      text: "Progress tracking & assistance",
+    },
+    {
+      id: "p3",
+      key: "p3_advanced_feedback",
+      text: "Advanced mentor feedback & check-ins",
+    },
+    {
+      id: "p3",
       key: "p3_career_transformation",
       text: "Transform your career, achieve success, and move forward",
     },
@@ -159,7 +201,7 @@ export default function PlanSection() {
   const plans = [
     {
       id: "p1",
-      name: "Instant Clarity",
+      name: "Starter",
       description:
         "Get quick solutions and mentor insights to make decisive moves",
       question: "Unsure about your next step?",
@@ -173,22 +215,18 @@ export default function PlanSection() {
       mocks: 0,
       overallMocks: 0,
       bestFor: [
-        "Unsure which career path or domain to pursue",
-        "Conflicted between multiple job offers and opportunities",
-        "Unclear about how to switch industries or roles",
-        "Struggling to make confident career decisions",
-        "Finding it hard to negotiate offers or evaluate opportunities and more...",
+        "Unsure which career path, domain, or role to pursue",
+        "Need resume, CV, and job profile review with feedback to attract recruiters",
+        "Applying to jobs but not getting interview calls",
+        "Lacking clarity on skill improvement or how to gain expertise",
+        "Facing conflicts or dilemmas in career decisions or opportunities",
+        "Need guidance to get unstuck and move forward in your career",
       ],
       icon: Target,
       // Features available in this plan
-      availableFeatures: [
-        "p1_mentor_session",
-        "p1_career_query_analysis",
-        "p1_mentor_insights",
-        "p1_decision_support",
-        "p1_clarity_boost",
-        "p1_plan_extension",
-      ],
+      availableFeatures: allFeatures
+        .filter((feature) => feature.id === "p1")
+        .map((feature) => feature.key),
       excludeFeatures: ["gs_extension"],
       color: "green",
       gradient: "from-green-50 to-emerald-100",
@@ -199,8 +237,8 @@ export default function PlanSection() {
     },
     {
       id: "p2",
-      name: "Growth Sprint",
-      description: "Crack your toughest career challenge with expert guidance",
+      name: "Pro",
+      description: "Turn career challenges into opportunities with expert guidance",
       question: "Facing a career challenge?",
       solution:
         "Get full analysis and actionable mentorship to overcome specific career challenges and achieve short-term measurable growth",
@@ -214,24 +252,16 @@ export default function PlanSection() {
       icon: Zap,
       bestFor: [
         "Struggling to crack interviews effectively",
-        "Lackig clarity on how to improve coding skills and gain expertise",
-        "Applying to jobs but rarely receiving interview calls",
-        "Resume not standing out, failing to get recruiter attention",
-        "Struggling to gain confidence in decision-making during transitions",
-        "Finding it hard to negotiate offers or evaluate opportunities and more...",
+        "Need advanced resume and CV building support",
+        "Need job portal profile building (LinkedIn, Naukri, etc.)",
+        "Need job applying and tracking support",
+        "Need curated resources and skill-building guidance",
+        "Need structured career growth report with tracking, assistance, and reviews to accelerate progress",
       ],
       // Features available in this plan
-      availableFeatures: [
-        "p2_mentor_sessions",
-        "p2_career_challenge_review",
-        "p2_actionable_guidance",
-        "p2_structured_report",
-        "p2_career_roadmap",
-        "p2_progress_tracking",
-        "p2_mentor_feedback",
-        "p2_career_resolution",
-        "p2_plan_extension",
-      ],
+      availableFeatures: allFeatures
+        .filter((feature) => feature.id === "p2")
+        .map((feature) => feature.key),
       excludeFeatures: ["gs_extension"],
       gradient: "from-purple-50 to-violet-100",
       border: "border-purple-300",
@@ -242,9 +272,9 @@ export default function PlanSection() {
     },
     {
       id: "p3",
-      name: "Career Mastery",
+      name: "Elite",
       description:
-        "Personalized 360° mentorship to overcome all your challenges and transform your career",
+      "Achieve career mastery & personal growth with 360° personalized mentorship.",
       question: "Ready for career transformation?",
       solution:
         "Get in-depth analysis across all challenges, actionable solutions, and completion milestones for long-term growth",
@@ -258,29 +288,16 @@ export default function PlanSection() {
       icon: Crown,
       // Features available in this plan
       bestFor: [
-        "Struggling to overcome multiple career challenges strategically",
-        "Difficulty communicating effectively in professional settings",
-        "Balancing work, personal life, and career growth effectively",
-        "Preparing for major transitions like promotions or leadership roles",
-        "Facing challenges in confidence, decision-making, and goal achievement and more...",
+        "Struggling with multiple career challenges.",
+        "Need career guidance + personal development coaching.",
+        "Want to master communication, confidence, work-life balance, and productivity.",
+        "Seeking exclusive masterclasses, advanced mentor feedback, and continuous tracking.",
+        "Preparing for competitive job markets with placement-ready skills.",
+        "Aiming for accelerated growth, success, and long-term career mastery.",
       ],
-      availableFeatures: [
-        "p3_mentor_sessions",
-        "p3_development_coach",
-        "p3_career_evaluation",
-        "p3_career_report",
-        "p3_career_roadmap",
-        "p3_tracking_assistance",
-        "p3_advanced_feedback",
-        "p3_exclusive_masterclass",
-        "p3_placement_support",
-        "p3_resume_support",
-        "p3_cv_guidance",
-        "p3_communication_skills",
-        "p3_confidence_productivity",
-        "p3_career_transformation",
-        "p3_plan_extension",
-      ],
+      availableFeatures: allFeatures
+        .filter((feature) => feature.id === "p3")
+        .map((feature) => feature.key),
       color: "purple",
       gradient: "from-blue-50 to-indigo-100",
       border: "border-blue-300",
@@ -345,7 +362,7 @@ export default function PlanSection() {
                 {plan.isPopular && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
                     <div className="bg-gradient-to-r from-blue-500 to-indigo-600  text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white animate-bounce text-nowrap">
-                      🔥 ELITE
+                      🔥 MOST POPULAR
                     </div>
                   </div>
                 )}
@@ -353,7 +370,7 @@ export default function PlanSection() {
                 {plan.isPremium && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
                     <div className="bg-gradient-to-r from-purple-500 to-violet-600  text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white text-nowrap">
-                      ⭐ PRO
+                      ⭐ PREMIUM CHOICE
                     </div>
                   </div>
                 )}
@@ -361,7 +378,7 @@ export default function PlanSection() {
                 {!plan.isPopular && !plan.isPremium && (
                   <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 z-20">
                     <div className="bg-gradient-to-r from-green-500 to-emerald-600 text-white px-8 py-3 rounded-full text-sm font-black shadow-2xl border-3 border-white text-nowrap">
-                      💡 STARTER
+                      💡 GET STARTED
                     </div>
                   </div>
                 )}
